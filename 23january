@@ -5,9 +5,9 @@ def write_strings():
 
 
     with open("strings.txt", "w") as file:
-        file.write(string_1 + "\n")
-        file.write(string_2 + "\n")
-        file.write(string_3 + "\n")
+        file.write("Your first string: " + string_1 + "\n")
+        file.write("Your first string: " + string_2 + "\n")
+        file.write("Your first string: " + string_3 + "\n")
 
 write_strings()
 
