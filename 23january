@@ -1,13 +1,7 @@
 def write_strings():
-    string_1 = input("Enter the first string: ")
-    string_2 = input("Enter the second string: ")
-    string_3 = input("Enter the third string: ")
-
-
     with open("strings.txt", "w") as file:
-        file.write("Your first string: " + string_1 + "\n")
-        file.write("Your first string: " + string_2 + "\n")
-        file.write("Your first string: " + string_3 + "\n")
+        for i in range (3):
+            string = input("Enter a string: ")
+            file.write("Your strings: " + string + "\n")
 
 write_strings()
-
