@@ -1,0 +1,6 @@
+def mult_byten():
+    with open("Data.txt", "r+") as file:
+        num = int(file.read())
+        file.seek(0)  # starts from index 0
+        file.write(str(num * 10) + "\n")  # file.write() can only print strings thats why we convert it back
+mult_byten()
